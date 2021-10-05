@@ -12,7 +12,8 @@ Black Jack Implementation
 In this simulation, I have followed the rules laid out by the editors at 
 Pagat.com (From Introduction to Payouts, https://www.pagat.com/banking/blackjack.html)
 I have plotted the flow chart to describe the high-level logic of one round of Black Jack in Figure 1. In this graph, the color filled (coral, grey and blue) boxes are final outcome of a game. Once we know the outcome, a payout utility is initiated to calculate the payout amount to the player.
-![image](Figure1.png)
+
+![image](Picture1.png)
 
 There are some assumptions required in this simulation:
 
@@ -43,8 +44,8 @@ Outcome:
 
 ![image](https://user-images.githubusercontent.com/28678607/136062166-255ac175-e59d-446c-82e2-433535553085.png)
 
+It is also interesting to check what’s the optimal action recommended by the algorithm. Tale 2 blow plots the frequency of each action under 2 strategies as well as the return rate. Notice that it is possible for the game to terminate before any simulation is carried out (either dealer or us hit Black Jack). Action equals to -1 represents those outcomes. As expected, the random strategy shows equal profamily on selecting any actions. In the simulated results, it is most common to pick one card. In fact, in 1000 games, simulation strategy recommended drawing 1 card 494 times. It seems that if we cannot bring this simulation with us to the game, we may be able to just draw one card in each game in order to improve our chances of winning or at least not lose).
 
-It is also interesting to check what’s the optimal action recommended by the algorithm. Tale 2 blow plots the frequency of each action under 2 strategies as well as the return rate. Notice that it is possible for the game to terminate before any simulation is carried out (either dealer or us hit Black Jack). Action equals to -1 represents those outcomes. As expected, the random strategy shows equal profamily on selecting any actions. In the simulated results, it is most common to pick one card. In fact, in 1000 games, simulation strategy recommended drawing 1 card 494 times. It seems that if we cannot bring this simulation with us to the game, we may be able to just draw one card in each game in order to improve our chances of winning or at least not lose).\n
 ![image](action.png)
 
 ![image](return.png)
