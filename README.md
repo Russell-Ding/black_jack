@@ -40,10 +40,11 @@ In this analysis, we simulated 1000 plays involving 3 players and 2 decks of pok
 Table 1 shows the outcome from the 1000 simulation under each strategy. As we can see from the average return, the simulation strategy on average has a positive return rate of 6.4%, meaning that we can actually make profit by using this strategy. On the other hand, the random actin strategy on average lost 27.3%. From the count number, it shows that out of 1000 games, random strategy lost 625 of them. It is expected since after distribution of first 2 cards, it is the players to make actions before the dealer. The players would go bust first, losing all their bets to the dealer. The simulation strategy makes decision based on current cards revealed in the game to optimize the probability of winning, improving the return rate of the game.
 
 Outcome:
-![image](https://user-images.githubusercontent.com/28678607/136061816-0df9703e-10bf-4cb5-ada7-5016a4c25380.png)
+
+![image](https://user-images.githubusercontent.com/28678607/136062166-255ac175-e59d-446c-82e2-433535553085.png)
 
 
-It is also interesting to check what’s the optimal action recommended by the algorithm. Tale 2 blow plots the frequency of each action under 2 strategies as well as the return rate. Notice that it is possible for the game to terminate before any simulation is carried out (either dealer or us hit Black Jack). Action equals to -1 represents those outcomes. As expected, the random strategy shows equal profamily on selecting any actions. In the simulated results, it is most common to pick one card. In fact, in 1000 games, simulation strategy recommended drawing 1 card 494 times. It seems that if we cannot bring this simulation with us to the game, we may be able to just draw one card in each game in order to improve our chances of winning or at least not lose).
+It is also interesting to check what’s the optimal action recommended by the algorithm. Tale 2 blow plots the frequency of each action under 2 strategies as well as the return rate. Notice that it is possible for the game to terminate before any simulation is carried out (either dealer or us hit Black Jack). Action equals to -1 represents those outcomes. As expected, the random strategy shows equal profamily on selecting any actions. In the simulated results, it is most common to pick one card. In fact, in 1000 games, simulation strategy recommended drawing 1 card 494 times. It seems that if we cannot bring this simulation with us to the game, we may be able to just draw one card in each game in order to improve our chances of winning or at least not lose).\n
 ![image](action.png)
 
 ![image](return.png)
